@@ -1,9 +1,9 @@
-#My Frequently Forgotten Facts (FFFs)
+# My Frequently Forgotten Facts (FFFs)
+======
 
 ## 1. 访问权限
 
-### 各修饰符访问权限如下表
---------
+### 各修饰符访问权限如下表：
 |Modifier|Class|Package|Out Subclass|Other|Total|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |`private`|Y|N|N|N|1|
