@@ -1,7 +1,15 @@
 # My Frequently Forgotten Facts (FFFs)
 ------
+## 1. Object
+> 在Java中，只有基本类型（primitive types）不是对象，如 int, char, boolean。
 
-## 1. 访问权限
+``` java
+Object obj;
+obj = new String(); //ok
+obj = new int[10]; //ok
+```
+
+## 2. 访问权限
 
 ### 各修饰符访问权限如下表：
 |Modifier|Class|Package|Out Subclass|Other|Total|
