@@ -16,7 +16,7 @@ go
 ```
 SQL Server 不适合命令行使用，乖乖用 [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) 吧。
 
-## 2. SQL Server 常用语句
+## 2. SQL Server 常用语句 [[Official doc here](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements)]
 ``` sql
 -- 建表
 CREATE TABLE classes
@@ -42,10 +42,10 @@ ALTER TABLE students ADD CONSTRAINT c_check
 -- 删除约束
 ALTER TABLE students DROP CONSTRAINT m_cascade;
 
--- 触发器
+-- 触发器 <https://docs.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql>
 CREATE TRIGGER u_cnum
 ON students
-FOR INSERT
+AFTER INSERT
 AS
 UPDATE classes
 SET cnum = cnum + 1
