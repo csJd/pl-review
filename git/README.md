@@ -26,6 +26,26 @@ cmd|first|second
 * `git branch new-branch-name`  Create a new branch
 * `git checkout branch-name`  Switch to a branch (even a remote branch)
 * `git checkout -b new-brach-name`  Create a new branch and switch to it
-* `git merge branch1 branch2 ...` Merge branch1 and branch2 into current branch 
+* `git merge branch1 branch2 ...`  Merge branch1 and branch2 into current branch 
 * `git branch -d branch-name`  Delete a branch
 
+### 4. remote
+* `git remote`  Show remotes
+* `git remote -v`  Show remotes more verbose
+* `git remote add <name> <url>`  Adds a remote named `<name>` for the repository at `<url>`
+  ``` bash
+  git remote add origin git@github.com:csJd/pl-review.git
+  ```
+* `git push <remote-name> <branch-name>`  Push local branch named `<branch-name>` to remote named `<remote-name>`
+  ``` bash
+  git push origin master
+  ```
+* `git pull <remote-name> <branch-name>`  Pull remote named `<remote-name>` to local branch named `<branch-name>`
+  ``` bash
+  git pull origin master
+  ```
+  which equals
+  ``` bash
+  git fetch origin
+  git merge master origin/master
+  ```
